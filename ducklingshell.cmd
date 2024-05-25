@@ -1,0 +1,1 @@
+docker run -v duckling:/duckling -it --rm .

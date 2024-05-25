@@ -89,6 +89,7 @@ dependents (Seal Duration) = HashSet.fromList [Seal Numeral, Seal TimeGrain]
 dependents (Seal Numeral) = HashSet.empty
 dependents (Seal Email) = HashSet.empty
 dependents (Seal AmountOfMoney) = HashSet.singleton (Seal Numeral)
+dependents (Seal ApprenticeYear) = HashSet.singleton (Seal Numeral)
 dependents (Seal Ordinal) = HashSet.singleton (Seal Numeral)
 dependents (Seal PhoneNumber) = HashSet.empty
 dependents (Seal Quantity) = HashSet.singleton (Seal Numeral)

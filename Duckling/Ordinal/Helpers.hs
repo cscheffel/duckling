@@ -10,6 +10,7 @@
 module Duckling.Ordinal.Helpers
   ( ordinal
   , oneOf
+  , isSimpleOrdinal
   ) where
 
 import Prelude
@@ -27,6 +28,10 @@ oneOf vs = Predicate $ \x ->
   case x of
     (Token Ordinal OrdinalData {TOrdinal.value = v}) -> elem v vs
     _ -> False
+
+isSimpleOrdinal :: Predicate
+isSimpleOrdinal (Token Ordinal OrdinalData{TOrdinal.value = v}) = v >= 0
+isSimpleOrdinal _ = False
 
 -- -----------------------------------------------------------------
 -- Production

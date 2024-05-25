@@ -24,6 +24,7 @@ import qualified Duckling.PhoneNumber.Rules as PhoneNumber
 import qualified Duckling.Temperature.Rules as Temperature
 import qualified Duckling.Url.Rules as Url
 import qualified Duckling.Volume.Rules as Volume
+import qualified Duckling.ApprenticeYear.Rules as ApprenticeYear
 
 rules :: Seal Dimension -> [Rule]
 rules (Seal AmountOfMoney) = AmountOfMoney.rules
@@ -40,5 +41,6 @@ rules (Seal Temperature) = Temperature.rules
 rules (Seal Time) = []
 rules (Seal TimeGrain) = []
 rules (Seal Url) = Url.rules
+rules (Seal ApprenticeYear) = ApprenticeYear.rules
 rules (Seal Volume) = Volume.rules
 rules (Seal (CustomDimension dim)) = dimRules dim

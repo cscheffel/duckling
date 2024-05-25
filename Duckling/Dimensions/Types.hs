@@ -26,6 +26,7 @@ import qualified Data.Text as Text
 import Duckling.Types
 
 toName :: Dimension a -> Text
+toName ApprenticeYear = "apprentice-year"
 toName RegexMatch = "regex"
 toName CreditCardNumber = "credit-card-number"
 toName Distance = "distance"
@@ -47,7 +48,8 @@ fromName :: Text -> Maybe (Seal Dimension)
 fromName name = HashMap.lookup name m
   where
     m = HashMap.fromList
-      [ ("amount-of-money", Seal AmountOfMoney)
+      [ ("apprentice-year", Seal ApprenticeYear)
+      , ("amount-of-money", Seal AmountOfMoney)
       , ("credit-card-number", Seal CreditCardNumber)
       , ("distance", Seal Distance)
       , ("duration", Seal Duration)

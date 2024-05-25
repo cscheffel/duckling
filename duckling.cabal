@@ -871,6 +871,13 @@ library
                      , Duckling.Volume.Rules
                      , Duckling.Volume.Types
 
+                     -- ApprenticeYear
+                     , Duckling.ApprenticeYear.DE.Corpus
+                     , Duckling.ApprenticeYear.DE.Rules
+                     , Duckling.ApprenticeYear.Helpers
+                     , Duckling.ApprenticeYear.Rules
+                     , Duckling.ApprenticeYear.Types
+
                      -- CreditCardNumber
                      , Duckling.CreditCardNumber.Corpus
                      , Duckling.CreditCardNumber.Helpers

@@ -17,6 +17,7 @@ allDimensions =
   , Seal Duration
   , Seal Numeral
   , Seal Ordinal
+  , Seal ApprenticeYear
   , Seal Time
   , Seal Volume
   ]
