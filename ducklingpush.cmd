@@ -1,0 +1,1 @@
+docker push 192.168.10.135:8083/uform-duckling
